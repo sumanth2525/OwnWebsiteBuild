@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Own Website Here</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="builder">
+  <header class="topbar">
+    <h1>Portfolio Site Builder</h1>
+  </header>
+
+  <main class="container">
+    <form id="builderForm" class="card">
+      <h2 class="center">Brand & Theme</h2>
+      <label class="field">Full Name
+        <input id="name" type="text" placeholder="Jane Doe" required>
+      </label>
+      <label class="field">Role / Title
+        <input id="role" type="text" placeholder="Full‑Stack Developer" required>
+      </label>
+      <label class="field">One‑line Tagline
+        <input id="tagline" type="text" placeholder="Turning coffee into code ☕" required>
+      </label>
+      <label class="field">Accent Colour
+        <input id="accent" type="color" value="#7a004b">
+      </label>
+
+      <h2 class="center">Profile Picture</h2>
+      <input id="profile" type="file" accept="image/*" required>
+
+      <h2 class="center">About Me</h2>
+      <textarea id="about" rows="4" placeholder="Tell the world who you are…" required></textarea>
+
+      <h2 class="center">Social Links</h2>
+      <div class="grid2">
+        <input id="linkEmail" type="url" placeholder="mailto:you@example.com">
+        <input id="linkLinkedIn" type="url" placeholder="https://linkedin.com/in/...">
+        <input id="linkGitHub" type="url" placeholder="https://github.com/...">
+        <input id="linkTwitter" type="url" placeholder="https://twitter.com/...">
+      </div>
+
+      <h2 class="center">Education (list one per line)</h2>
+      <textarea id="education" rows="3" placeholder="2024 | B.S. Computer Science | XYZ University"></textarea>
+
+      <h2 class="center">Experience (list one per line)</h2>
+      <textarea id="experience" rows="3" placeholder="2023‑Now | Full‑Stack Engineer | Acme Tech"></textarea>
+
+      <button class="btnPrimary full" type="submit">Save & Preview ➜</button>
+    </form>
+  </main>
+  <footer class="center small">© 2025 Builder Demo</footer>
+  <script src="js/builder.js"></script>
+</body>
+</html>
